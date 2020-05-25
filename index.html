@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      loadSidebar: true,
+      subMaxLevel: 2,
+      themeColor:'#eb5523',
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      name: '',
+      repo: '',
+      copyCode: {
+        buttonText : 'Copy to clipboard',
+        errorText  : 'Error',
+        successText: 'Copied'
+      }
+    }
+
+    Prism.languages.json = {
+    	'property': /"(?:\\.|[^\\"\r\n])*"(?=\s*:)/i,
+    	'string': {
+    		pattern: /"(?:\\.|[^\\"\r\n])*"(?!\s*:)/,
+    		greedy: true
+    	},
+    	'number': /\b0x[\dA-Fa-f]+\b|(?:\b\d+\.?\d*|\B\.\d+)(?:[Ee][+-]?\d+)?/,
+    	'punctuation': /[{}[\]);,]/,
+    	'operator': /:/g,
+    	'boolean': /\b(?:true|false)\b/i,
+    	'null': /\bnull\b/i
+    };
+
+    Prism.languages.jsonp = Prism.languages.json;
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-example-panels"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-json.js"></script>
+  <script src="https://unpkg.com/docsify-copy-code"></script>
+</body>
+</html>
