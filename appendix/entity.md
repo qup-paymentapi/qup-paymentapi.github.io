@@ -12,7 +12,7 @@
 | `packageRateId`    | UUID String         | Required if bookType = 3                                                        |                                                                                       |
 | `typeRate`         | Integer             | Type of Rate                                                                    | 0 - Regular <br>1 - Hourly <br>2 - Round trip <br>3 - Intercity                       |
 | `services`         | List<String>        | Additional services                                                             |                                                                                       |
-| `extraDestination` | List<ExtraLocation> | List of [ExtraLocation](appendix/entity.md?id=extralocation-entity)                                                           |                                                                                       |
+| `extraDestination` | List<ExtraLocation> | List of [ExtraLocation](appendix/entity.md?id=extralocation-entity)             |                                                                                       |
 | `seat`             | Integer             | Number of seat                                                                  |                                                                                       |
 | `luggage`          | Integer             | Number of luggate                                                               |                                                                                       |
 | `intercityRouteId` | UUID String         | Id of intercity route                                                           |                                                                                       |
