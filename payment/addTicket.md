@@ -12,11 +12,28 @@ Add new ticket into MySQL after complete a trip
 |----------------|--------|-----------------------------------------------|
 | `fleetId`      | String | Id of fleet, provided by QUp                  |
 | `bookId`       | String | Id of booking                                 |
-| `distanceGG`   | Double | Distance calculated by Google API        		|
-| `distanceTour` | Double | Distance calculated by GPS of the device 		|
+| `distanceGG`   | Double | Distance calculated by Google API        		  |
+| `distanceTour` | Double | Distance calculated by GPS of the device 		  |
 
 ## Response Entity
 
+| Attribute    | Type    | Description                                  |
+|--------------|---------|----------------------------------------------|
+| `returnCode` | Inteter | Indicate the result of the request           |
+| `response`   | Json    | Json string contains the response attributes |
+
+!> Available Return Code
+
+| Return Code | Description                                              |
+|-------------|----------------------------------------------------------|
+| `200`       | Success                                                  |
+| `406`       | Missing something. Check request values or fleet setting |
+
+!> Response Attributes
+
+| Attribute            | Type    | Description                                                            |
+|----------------------|---------|------------------------------------------------------------------------|
+| `airportFee`         | Double  | Airport fee                                                            |
 
 ## Example Request
 ```json

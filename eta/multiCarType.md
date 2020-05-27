@@ -35,8 +35,8 @@ Used to estimate the fare for a list car type which were requested for a trip
 | `typeRate`         | Integer             | Type of Rate                                                                    | 0 - Regular <br>  <br>1 - Hourly <br>2 - Round trip <br>3 - Intercity <br>                                                       |
 | `services`         | List<String>        | Additional services                                                             |                                                                                                                                          |
 | `rv`               | String              | Revision of Driver app                                                          |                                                                                                                                          |
-| `extraDestination` | List<ExtraLocation> | List of [ExtraLocation](appendix/entity.md?id=extralocation-entity)             |                                                                                                                                       |
-| `rateDetails`      | List<RateDetails>   | List of [RateDetails](appendix/entity.md?id=ratedetails-entity)                 |                                                                                                                                          |
+| `extraDestination` | List<ExtraLocation> | List of [ExtraLocation](eta/resource.md?id=extralocation-entity)             |                                                                                                                                       |
+| `rateDetails`      | List<RateDetails>   | List of [RateDetails](eta/resource.md?id=ratedetails-entity)                 |                                                                                                                                          |
 | `zoneId`           | UUID String         | Id of destination zone                                                          |                                                                                                                                          |
 | `suplierFleetId`   | String              | Id of supplier fleet, provided by QUp                                           |                                                                                                                                          |
 | `supliers`         | List<String>        | List of suppliers                                                               |                                                                                                                                          |
@@ -44,7 +44,7 @@ Used to estimate the fare for a list car type which were requested for a trip
 | `seat`             | Integer             | Number of seat                                                                  |                                                                                                                                          |
 | `luggage`          | Integer             | Number of luggate                                                               |                                                                                                                                          |
 | `intercityRouteId` | UUID String         | Id of intercity route                                                           |                                                                                                                                          |
-| `routeNumber`      | Integer             | Indicate the number of intercity route                                          | 1 - round 1 <br>2 - round 2 
+| `routeNumber`      | Integer             | Indicate the number of intercity route                                          | 1 - round 1 <br>2 - round 2
                                                                                     |
 
 ## Response Entity
@@ -53,13 +53,13 @@ Used to estimate the fare for a list car type which were requested for a trip
 ## Example Request
 ```json
 {
-  
+
 }
 ```
 
 ## Example Response
 ```json
 {
-  
+
 }
 ```
