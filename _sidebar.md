@@ -1,4 +1,4 @@
-![logo](logo.png)
+![logo](http://lab-qup.s3.amazonaws.com/newlogo.png)
 - [**Getting Started**](started.md)
 - [**Estimate Fare**](eta.md)
 	- [Estimate Fare Normal](eta/etaFare.md)

@@ -16,6 +16,30 @@ a {
   z-index: 5;
 }
 
+/****** PANEL ******/
+:root{
+    /* Document */
+    --docsify-example-panels-document-width: 90%;
+
+    /* Wrapper */
+    --docsify-example-panels-wrapper-width: 100%;
+
+    /* Standards */
+    --docsify-example-panels-padding-inner : 8px 16px;
+    --docsify-example-panels-padding-surroundings : 0px;
+
+    /* Panel Left */
+    --docsify-example-panels-left-panel-background : transparent;
+    --docsify-example-panels-left-panel-width : 60%;
+
+    /* Panel Right */
+    --docsify-example-panels-right-panel-background : transparent;
+    --docsify-example-panels-right-panel-width : 40%;
+
+    /* Titles */
+    --docsify-example-panels-title-background: transparent;
+}
+
 /****** Sidebar ******/
 .sidebar .app-name-link img {
   height: 150px;
@@ -39,10 +63,6 @@ a {
 
 
 /****** Markdown General ******/
-.markdown-section {
-  padding: 30px 30px 40px;
-}
-
 .markdown-section a {
   text-decoration: none;
   border-bottom: 0.1rem solid var(--theme-color);
@@ -86,7 +106,7 @@ a {
 .markdown-section table td,
 .markdown-section table th {
   border: none;
-  padding: 1.1rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   text-align: left;
 }
 

@@ -2,11 +2,16 @@
 
 Used to estimate the fare for a normal trip
 
+## HTTP Request
+<!-- panels:start -->
+
+<!-- panels:title-panel -->
+
 > POST /api/paymentgateway/estimateFare
 
 - `Role: dispatcher`
 
-## Request Entity
+<!-- div:left-panel -->
 
 | Attribute          | Type        | Description                                                                 | Values                                                          |
 |--------------------|-------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -42,8 +47,49 @@ Used to estimate the fare for a normal trip
 | `zipCodeTo`        | String      | Zip code of destination address                                             |                                                                 |
 | `zoneId`           | UUID String | Id of destination zone                                                      |                                                                 |
 
+<!-- div:right-panel -->
 
-## Response Entity
+```json
+{
+  "bookFrom": "URIDE",
+  "bookType": 0,
+  "city": "P1B 2V2_North Bay_Ontario_Canada",
+  "destination": [
+    -79.4372222,
+    46.3063889
+  ],
+  "distance": 3578,
+  "duration": 422,
+  "fleetId": "uride",
+  "meetDriver": -1,
+  "pegasus": true,
+  "phone": "+16473000385",
+  "pickup": [
+    -79.46784537339585,
+    46.31534267700438
+  ],
+  "pickupTime": "Now",
+  "promoCode": "",
+  "rv": "4.6.4311",
+  "services": [
+    "5cc86aaf35789c14051502bf"
+  ],
+  "tip": 0,
+  "typeRate": 0,
+  "userId": "5e5052c9ab65637a06be3b48",
+  "vehicleTypeId": "Car-Ontario",
+  "zipCodeFrom": "P1B 2V2",
+  "zipCodeTo": "P1B 9V6",
+  "zoneId": "5ce25ab2e4b04ede332f4906"
+}
+```
+<!-- panels:end -->
+
+## HTTP Response
+
+<!-- panels:start -->
+
+<!-- div:left-panel -->
 
 | Attribute    | Type    | Description                                  |
 |--------------|---------|----------------------------------------------|
@@ -98,43 +144,8 @@ Used to estimate the fare for a normal trip
 | `unroundedTotalAmt`  | Double  | Unrounded total fee                                                    |
 | `vehicleType`        | String  | Vehicle type name                                                      |
 
-## Example Request
-```json
-{
-  "bookFrom": "URIDE",
-  "bookType": 0,
-  "city": "P1B 2V2_North Bay_Ontario_Canada",
-  "destination": [
-    -79.4372222,
-    46.3063889
-  ],
-  "distance": 3578,
-  "duration": 422,
-  "fleetId": "uride",
-  "meetDriver": -1,
-  "pegasus": true,
-  "phone": "+16473000385",
-  "pickup": [
-    -79.46784537339585,
-    46.31534267700438
-  ],
-  "pickupTime": "Now",
-  "promoCode": "",
-  "rv": "4.6.4311",
-  "services": [
-    "5cc86aaf35789c14051502bf"
-  ],
-  "tip": 0,
-  "typeRate": 0,
-  "userId": "5e5052c9ab65637a06be3b48",
-  "vehicleTypeId": "Car-Ontario",
-  "zipCodeFrom": "P1B 2V2",
-  "zipCodeTo": "P1B 9V6",
-  "zoneId": "5ce25ab2e4b04ede332f4906"
-}
-```
+<!-- div:right-panel -->
 
-## Example Response
 ```json
 {
   "returnCode": 200,
@@ -175,3 +186,4 @@ Used to estimate the fare for a normal trip
   }
 }
 ```
+<!-- panels:end -->
